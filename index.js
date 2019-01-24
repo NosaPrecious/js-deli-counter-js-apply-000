@@ -6,10 +6,11 @@ function takeANumber(deliQueue, personName){
 }
 
 function nowServing(currentLineBeingServed){
+  var removedElement;
   if(currentLineBeingServed.length === 0){
     return "There is nobody waiting to be served!";
   }else{
-    var removedElement= currentLineBeingServed.shift(currentLineBeingServed[0]);
+    removedElement= currentLineBeingServed.shift(currentLineBeingServed[0]);
   return `Currently serving ${removedElement}.`; 
   }
 }
